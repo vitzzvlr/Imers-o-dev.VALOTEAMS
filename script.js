@@ -2,6 +2,8 @@ let CardConteiner = document.querySelector('.cards-container');
 let campoBusca = document.getElementById('campoBusca');
 let dados = [];
 
+Buscar();
+
 async function Buscar() {
     let resposta = await fetch('data.json');
     dados = await resposta.json();
